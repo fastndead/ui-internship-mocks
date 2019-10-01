@@ -51,7 +51,7 @@ body{
 .container__icon_bottom{
   width: 15px;
   height: 25px;
-  margin-top:auto;
+  margin-top: 60px;
   margin-bottom: 10vh;
 }
 
@@ -89,7 +89,6 @@ body{
 }
 
 .text_paragraph{
-    flex: 1;
     width: 390px;
     margin-top: 29px;
     font-size: 10px;
@@ -229,8 +228,8 @@ body{
 
 
 .button{
+  width: 263px;
   margin-top: 21px;
-  max-width: 198px;
   height: 29px;
   margin-left: 170px;
   margin-right: 170px;
@@ -254,4 +253,10 @@ footer>.container{
   flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1024px){
+  .text_paragraph{
+    width: 320px;
+  }
 }
