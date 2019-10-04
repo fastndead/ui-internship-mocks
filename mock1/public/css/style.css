@@ -133,8 +133,7 @@ body {
     padding-left: 77px;
     padding-right: 77px;
     display: table;
-    width: 100.5%;
-    ;
+    width: 100%;
     margin-bottom: -10px;
 }
 
@@ -146,10 +145,13 @@ body {
     letter-spacing: 3.51px;
 }
 
+.text_heading_second {
+    display: flex;
+}
+
 .text_heading_second:before,
 .text_heading_second>.text_heading-inner-text,
 .text_heading_second:after {
-    display: table-cell;
     white-space: nowrap;
 }
 
@@ -264,7 +266,7 @@ body {
     margin-right: 18px
 }
 
-footer>.container {
+.wrapper_footer>.container {
     margin-top: 0;
     margin-bottom: 40px;
     flex-direction: row;
