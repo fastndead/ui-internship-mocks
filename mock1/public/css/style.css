@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -32,7 +31,7 @@ body {
 .container {
     display: flex;
     margin-top: 126px;
-    width: 47vw;
+    width: 47%;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -96,8 +95,8 @@ body {
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0.6px;
-    margin-left: 9vw;
-    margin-right: 9vw;
+    margin-left: 9%;
+    margin-right: 9%;
 }
 
 .text_white {
@@ -131,7 +130,7 @@ body {
     padding-left: 77px;
     padding-right: 77px;
     display: table;
-    width: 47vw;
+    width: 100.5%;;
     margin-bottom: -10px;
 }
 
