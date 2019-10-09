@@ -1,0 +1,9 @@
+.content-row {
+  max-width: 1080px;
+  display: flex;
+  margin-top: 60px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

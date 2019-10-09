@@ -1,0 +1,28 @@
+.footer{
+  height:100px;
+  width: 100%;
+  margin: 0 6%;
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  &__link {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &_left{
+    margin-right: 30%;
+  }
+
+  &__right{
+    width: 150px;
+    margin-left: auto;
+  }
+}
