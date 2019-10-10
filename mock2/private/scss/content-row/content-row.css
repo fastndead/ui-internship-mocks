@@ -1,0 +1,10 @@
+.content-row {
+  max-width: 1080px;
+  display: flex;
+  margin-top: 60px;
+}
+.content-row:first-child {
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=content-row.css.map */
