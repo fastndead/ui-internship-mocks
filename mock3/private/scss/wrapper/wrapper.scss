@@ -1,4 +1,5 @@
 .wrapper {
+  position: relative;
   display: flex;
   width: 100%;
   align-items: center;
@@ -10,7 +11,6 @@
 
   &_darken-secodary {
     background-color: $secondary-dark-background-color;
-
   }
 
   &_header {
@@ -28,5 +28,7 @@
     background-repeat: repeat;
   }
 
-
+  &_triangle {
+    width: 30%;
+  }
 }

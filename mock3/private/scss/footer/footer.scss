@@ -1,0 +1,52 @@
+.footer {
+  padding-right: 150px;
+
+  &__logo-start {
+    position: relative;
+    @include font("Lato", 27px, 400, 35px, null, null, none);
+  }
+
+  &__logo-end {
+    color: $white;
+
+    &:before {
+      content: url("/images/Polygon_1.svg");
+      position: absolute;
+      top: -10%;
+      z-index: -1;
+    }
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__column {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__social-media-links {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__social-media-icon {
+    width: 20px;
+    height: 21px;
+    opacity: 0.5;
+  }
+
+  &:before {
+    content: "";
+    background: linear-gradient(45deg,  #ffffff 80%, #ff6d6d 80%) no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
