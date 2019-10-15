@@ -1,0 +1,53 @@
+.text {
+  @include font("Exo", 16px, 500, 26px, .64px, null, none);
+
+  &_heading-main {
+    @include font("Exo", 60px, 100, 75px, 2.4px, null, none);
+    width: 750px;
+    margin-top: 0;
+  }
+
+  &_heading {
+    @include font("Exo", 40px, 500, 50px, 1.6px, null, none);
+    margin-top: 10px;
+  }
+
+  &_heading-small {
+    @include font("Exo", 22px, 500, 50px, .88px, null, none);
+  }
+
+  &_extra-small {
+    @include font("Exo", 14px, 100, null, .56px, null, none);
+  }
+
+  &_heading-medium {
+    margin-bottom: 0;
+    @include font("Exo", 16px, 500, 50px, 3.2px, uppercase, none);
+  }
+
+  &_secondary {
+    color: $secondary-color;
+  }
+
+  &_white {
+    color: $white;
+  }
+
+  &_footer {
+    @include font("Exo", 14px, 400, 38px, 0.56, null, none);
+    color: $primary-text-color;
+  }
+
+  &_footer-address {
+    width: 230px;
+  }
+
+  &_link {
+    text-decoration: underline;
+  }
+
+  &_quote {
+    font-weight: 100;
+    font-style: italic;
+  }
+}
