@@ -63,3 +63,7 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+#Css files
+*.css
+*.css.map

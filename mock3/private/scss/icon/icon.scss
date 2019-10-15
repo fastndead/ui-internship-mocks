@@ -1,0 +1,9 @@
+.icon {
+  width: 65px;
+  height: 65px;
+
+  &_partner {
+    filter: invert(100%);
+    margin-bottom: 100px
+  }
+}

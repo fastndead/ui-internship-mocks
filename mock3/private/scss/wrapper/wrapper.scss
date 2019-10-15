@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  &_darken {
+    background-color: $dark-background-color;
+  }
+
+  &_darken-secodary {
+    background-color: $secondary-dark-background-color;
+
+  }
+
+  &_header {
+    min-height: 100vh;
+    background-image: url("/images/main-background.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &_background-image {
+    background: rgba(0, 0, 0, 0.9);
+    background-image: url("/images/Group_4.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+  }
+
+
+}

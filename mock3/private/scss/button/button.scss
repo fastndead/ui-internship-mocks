@@ -1,0 +1,24 @@
+.button {
+  display: inline-flex;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #ff6d6d;
+  @include font("Exo", 16px, 400, 50px, 3.2px, uppercase, none);
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  &_play-button {
+
+  }
+
+  &_form {
+    width: 258px;
+    height: 50px;
+  }
+
+  &_header {
+    width: 190px;
+    height: 50px;
+  }
+}

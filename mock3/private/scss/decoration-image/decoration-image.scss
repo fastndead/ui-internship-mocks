@@ -1,0 +1,21 @@
+.decoration-image {
+  position: absolute;
+
+  &_1 {
+    top: 0;
+    left: 6%;
+  }
+  &_2 {
+    top: 0;
+    right: 6%;
+  }
+  &_3 {
+    bottom: 0;
+    right: 6%;
+  }
+
+  &_4 {
+    top: 25%;
+    left: 3%;
+  }
+}
