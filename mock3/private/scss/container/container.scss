@@ -36,7 +36,7 @@
   }
 
   &__article {
-    padding: 60px;
+    padding: 50px;
 
 
     &_center {
@@ -45,6 +45,7 @@
 
     &_narrow {
       width: 50%;
+      box-sizing: border-box;
 
       &:after {
         content: "";
@@ -62,44 +63,5 @@
 
   &_footer {
     flex-direction: row;
-  }
-
-  &_with-triangle-2 {
-    &:before {
-      content: "";
-      background: linear-gradient(45deg, #ff6d6d 50%, #ffffff 50%) no-repeat;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: -300px;
-      bottom: 0;
-      z-index: -1;
-    }
-  }
-
-  &_with-triangle-1 {
-    @media (max-width: 1030px) {
-      &:before {
-        content: "";
-        background: linear-gradient(135deg, #f6f5f4 66%, #ff6d6d 66%) no-repeat;
-        position: absolute;
-        width: 50%;
-        height: 100%;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-      }
-    }
-
-    &:before {
-      content: "";
-      background: linear-gradient(135deg, #f6f5f4 52%, #ff6d6d 50%) no-repeat;
-      position: absolute;
-      width: 40%;
-      height: 100%;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-    }
   }
 }

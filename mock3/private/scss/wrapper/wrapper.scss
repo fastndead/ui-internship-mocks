@@ -31,4 +31,30 @@
   &_triangle {
     width: 30%;
   }
+
+  &_with-triangle-1 {
+    &:before {
+      content: "";
+      background: linear-gradient(to bottom right, #f6f5f4 50%, #ff6d6d 50%) no-repeat;
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      left: 50%;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
+  &_with-triangle-2 {
+    &:before {
+      content: "";
+      background: linear-gradient(45deg, #ff6d6d 50%, #ffffff 50%) no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: -300px;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
 }

@@ -27,6 +27,26 @@
 .wrapper_triangle {
   width: 30%;
 }
+.wrapper_with-triangle-1:before {
+  content: "";
+  background: linear-gradient(to bottom right, #f6f5f4 50%, #ff6d6d 50%) no-repeat;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  bottom: 0;
+  z-index: -1;
+}
+.wrapper_with-triangle-2:before {
+  content: "";
+  background: linear-gradient(45deg, #ff6d6d 50%, #ffffff 50%) no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -300px;
+  bottom: 0;
+  z-index: -1;
+}
 
 .page {
   margin: 0;
@@ -66,13 +86,14 @@
   padding: 25px;
 }
 .container__article {
-  padding: 60px;
+  padding: 50px;
 }
 .container__article_center {
   text-align: center;
 }
 .container__article_narrow {
   width: 50%;
+  box-sizing: border-box;
 }
 .container__article_narrow:after {
   content: "";
@@ -86,38 +107,6 @@
 }
 .container_footer {
   flex-direction: row;
-}
-.container_with-triangle-2:before {
-  content: "";
-  background: linear-gradient(45deg, #ff6d6d 50%, #ffffff 50%) no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -300px;
-  bottom: 0;
-  z-index: -1;
-}
-@media (max-width: 1030px) {
-  .container_with-triangle-1:before {
-    content: "";
-    background: linear-gradient(135deg, #f6f5f4 66%, #ff6d6d 66%) no-repeat;
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-}
-.container_with-triangle-1:before {
-  content: "";
-  background: linear-gradient(135deg, #f6f5f4 52%, #ff6d6d 50%) no-repeat;
-  position: absolute;
-  width: 40%;
-  height: 100%;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
 }
 
 .button {
@@ -292,7 +281,7 @@
   justify-content: space-between;
   max-width: 1140px;
   align-items: flex-end;
-  padding: 30px;
+  padding: 25px;
   padding-top: 0;
 }
 .form_footer {
@@ -310,7 +299,6 @@
   letter-spacing: 0.64px;
   text-transform: uppercase;
   text-decoration: none;
-  width: 200px;
   height: 49px;
   border-radius: 3px;
   border: 1px solid #ffffff;
@@ -320,6 +308,7 @@
 }
 .form__text-input_footer {
   background-color: rgba(255, 255, 255, 0.8);
+  color: #282828;
   width: 100%;
   padding-right: 50px;
 }
