@@ -22,12 +22,18 @@
     }
   }
 
-  &_left {
-    margin-right: 300px;
+  &__link-wrapper {
+    padding-right: 30px;
+    white-space: nowrap;
   }
 
-  &__right {
-    width: 150px;
+  &_left {
+    max-width: 200px;
+    margin-right: 200px;
+  }
+
+  &_right {
+    max-width: 200px;
     margin-left: auto;
   }
 }
