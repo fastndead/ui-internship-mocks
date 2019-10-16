@@ -1,7 +1,7 @@
 .footer {
   height: 100px;
   width: 100%;
-  padding: 0 6%;
+  padding: 0 30px;
   max-width: 1080px;
   display: flex;
   justify-content: space-between;
@@ -23,7 +23,7 @@
   }
 
   &_left {
-    margin-right: 35%;
+    margin-right: 300px;
   }
 
   &__right {

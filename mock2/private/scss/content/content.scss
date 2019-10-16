@@ -1,5 +1,5 @@
 .content {
-  padding: 0 6%;
+  padding: 0 50px;
   max-width: 1080px;
   display: flex;
   align-items: center;
@@ -33,8 +33,8 @@
     text-transform: uppercase;
 
     &_main {
-      margin-right: 8%;
-      margin-left: 8%;
+      margin-right: 60px;
+      margin-left: 60px;
     }
   }
 
@@ -47,8 +47,8 @@
     margin-top: 20px;
 
     &_main {
-      margin-right: 8%;
-      margin-left: 8%;
+      margin-right: 60px;
+      margin-left: 60px;
     }
   }
 
@@ -68,8 +68,8 @@
     margin-top: 23px;
 
     &_main {
-      margin-right: 8%;
-      margin-left: 8%;
+      margin-right: 60px;
+      margin-left: 60px;
     }
 
     &_shortened {
@@ -82,7 +82,7 @@
   &__comment {
     text-decoration: none;
     color: #b4ad9e;
-    margin: 35px 8% 0;
+    margin: 35px 60px 0;
     align-self: end;
     font-family: "Ubuntu", sans-serif;
     font-size: 14px;
