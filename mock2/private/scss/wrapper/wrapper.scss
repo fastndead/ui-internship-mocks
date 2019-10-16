@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  padding: 60px 0;
+  justify-content: center;
+
+
+  &_secondary-color {
+    background-color: #f0f0f0;
+    padding: 0;
+    flex-shrink: 0;
+  }
+
+  &_header {
+    padding: 0;
+  }
+}

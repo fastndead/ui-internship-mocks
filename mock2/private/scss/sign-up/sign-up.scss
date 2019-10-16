@@ -1,0 +1,17 @@
+.sign-up-form {
+    height: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+
+  &__title {
+    color: #333333;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    margin-bottom: 80px;
+  }
+}

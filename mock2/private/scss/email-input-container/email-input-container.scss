@@ -1,0 +1,23 @@
+.email-input-container {
+  display: flex;
+  width: 400px;
+  border-bottom: 3px solid #000000;
+  justify-content: center;
+
+  &__text {
+    border: none;
+    background-color: inherit;
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 350px;
+    margin-bottom: 5px;
+  }
+
+  &__submit {
+    border: none;
+    background-color: inherit;
+    height: 17px;
+    width: 50px;
+  }
+}

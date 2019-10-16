@@ -1,0 +1,39 @@
+.footer {
+  height: 100px;
+  width: 100%;
+  padding: 0 30px;
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  &__link {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
+
+  &__link-wrapper {
+    padding-right: 30px;
+    white-space: nowrap;
+  }
+
+  &_left {
+    max-width: 200px;
+    margin-right: 200px;
+  }
+
+  &_right {
+    max-width: 200px;
+    margin-left: auto;
+  }
+}
