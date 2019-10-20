@@ -1,0 +1,25 @@
+.list {
+  margin: 0; /* To remove default bottom margin */
+  padding: 0; /* To remove default left padding */
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_centered {
+      flex-direction: column;
+    }
+  }
+
+  &_margin-top {
+    margin-top: 80px;
+  }
+
+  &_direction-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+}

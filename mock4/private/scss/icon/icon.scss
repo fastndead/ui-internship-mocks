@@ -1,0 +1,8 @@
+.icon {
+  flex-grow: 1;
+  align-items: center;
+
+  &_brand-color {
+    color: $brand-color;
+  }
+}

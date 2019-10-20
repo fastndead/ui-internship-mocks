@@ -1,0 +1,21 @@
+.quote {
+  @include paragraph-font;
+  font-style: italic;
+  background-color: $background-color-secondary;
+  box-sizing: border-box;
+  padding: 25px 13px;
+  height: 150px;
+  max-width: 270px;
+  position: relative;
+
+  &:before {
+    background-color: $background-color-secondary;
+    content: "";
+    display: flex;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    bottom: -7.5px;
+    transform: rotate(47deg) skew(5deg);
+  }
+}

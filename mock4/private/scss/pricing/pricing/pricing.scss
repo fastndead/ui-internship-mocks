@@ -1,0 +1,55 @@
+.pricing {
+  width: 340px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @include for-ipads-landscape {
+    width: 300px;
+  }
+
+  &__dollar {
+    font-size: 35px;
+  }
+
+  &__rect {
+
+    padding: 15px;
+    margin: 1px 0;
+
+    background-color: white;
+    @include pricing-font;
+
+    &_black {
+      padding: 20px;
+      background-color: $text-color-primary;
+      @include heading-font;
+      color: white;
+    }
+
+    &_italic {
+      @include paragraph-font;
+      font-style: italic;
+    }
+
+    &_number {
+      padding-top: 30px;
+      padding-bottom: 10px;
+      font-family: Raleway;
+      font-size: 94px;
+      height: 50px;
+    }
+
+    &_brand-color {
+      background-color: $brand-color;
+      font-weight: 700;
+      color:white;
+    }
+
+    &_collapsed {
+      height: 5px;
+      padding: 0;
+    }
+
+  }
+}

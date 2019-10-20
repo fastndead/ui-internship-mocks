@@ -1,0 +1,23 @@
+.main-header {
+  max-width: 512px;
+
+  &__header {
+    @include main-heading-font;
+
+    &:after {
+      content: "";
+      display: flex;
+      border-bottom: 2px white solid;
+      width: 72px;
+      margin-top: 36px;
+    }
+  }
+
+  &__paragraph {
+    @include main-heading-paragraph-font;
+  }
+
+  @include logo-embedment(60px);
+
+
+}

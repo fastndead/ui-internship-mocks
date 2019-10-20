@@ -1,0 +1,35 @@
+.tabs-box {
+  display: flex;
+  flex-direction: column;
+  height: 348px;
+  flex-wrap: wrap;
+
+  @include for-ipads-landscape {
+    width: 954px;
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $background-color-secondary;
+    height: 112px;
+    width: 112px;
+    text-align: center;
+    background-color: $text-color-primary;
+    @include tab-font;
+    transition: background-color 0.1s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $brand-color;
+    }
+  }
+
+
+  #tab1:checked ~ #tab1-label,
+  #tab2:checked ~ #tab2-label,
+  #tab3:checked ~ #tab3-label {
+    background-color: $brand-color;
+  }
+}

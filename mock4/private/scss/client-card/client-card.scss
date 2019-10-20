@@ -1,0 +1,16 @@
+.client-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 180px;
+
+  &__client-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &_margin-top {
+    margin-top: 30px;
+    margin-right: auto;
+  }
+}

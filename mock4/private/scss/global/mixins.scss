@@ -1,0 +1,72 @@
+@mixin font($family, $size, $weight, $line-height, $spacing, $text-transform, $text-decoration, $opacity, $color) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  letter-spacing: $spacing;
+  text-transform: $text-transform;
+  text-decoration: $text-decoration;
+  opacity: $opacity;
+  color: $color
+}
+
+@mixin navbar-font {
+  @include font("Open Sans", 14px, 600, null, null, null, none, 0.69, $text-color-dark-background);
+}
+
+@mixin main-heading-font {
+  @include font("Raleway", 36px, 300, null, null, uppercase, none, 1, $text-color-dark-background);
+}
+
+@mixin main-heading-paragraph-font {
+  @include font("Raleway", 16px, 300, 23px, null, null, none, 0.8, $text-color-dark-background);
+}
+
+@mixin button-font {
+  @include font("Open Sans", 15px, 600, 20px, null, null, none, 1, $text-color-dark-background);
+}
+
+@mixin heading-font {
+  @include font("Open Sans", 20px, 700, null, null, null, none, 1, $text-color-primary);
+}
+
+@mixin paragraph-font {
+  @include font("Open Sans", 14px, 400, 20px, null, null, none, 1, $text-color-secondary);
+}
+
+@mixin placeholder-font {
+  @include font("Open Sans", 14px, 400, null, null, null, none, 1, $text-color-placeholder);
+}
+
+@mixin logo-first-part-font($size) {
+  @include font("Open Sans", $size, 600, null, null, null, none, 1, $text-color-dark-background);
+}
+
+@mixin logo-second-part-font($size) {
+  @include font("Open Sans", $size, 300, null, null, null, none, 1, $brand-color);
+}
+
+@mixin tab-font {
+  @include font("Open Sans", 15px , 600, 20px, null, uppercase, none, 1, $white);
+}
+
+@mixin  pricing-font {
+  @include font("Open Sans", 14px, 400, 24px, null, uppercase, none, 1, $text-color-secondary);
+}
+
+@mixin logo-embedment($size) {
+  &__logo {
+    @include logo-first-part-font($size);
+
+    &_second-part {
+      @include logo-second-part-font($size);
+    }
+  }
+}
+
+@mixin for-ipads-landscape {
+  /* iPads (landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1200px) {
+    @content
+  }
+}

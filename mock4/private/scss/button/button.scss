@@ -1,0 +1,71 @@
+.button {
+  padding: 15px 32px;
+  border: 0;
+  outline: none;
+  @include button-font;
+  cursor: pointer;
+
+  &_main-heading-form {
+    width: 100%;
+    background-color: $brand-color;
+    @include button-font;
+    height: 50px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 0;
+  }
+
+  &_transparent {
+    background-color: transparent;
+    border: 2px white solid;
+    align-self: center;
+
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+
+    &:active {
+      -webkit-transition: all 0s;
+      -moz-transition: all 0s;
+      -o-transition: all 0s;
+      transition: all 0s;
+      outline: none;
+      color: $brand-color;
+      border-color: $brand-color;
+    }
+  }
+
+  &_colored {
+    background-color: $brand-color;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.38);
+    align-self: flex-start;
+    -webkit-transition: box-shadow 1s;
+    transition: box-shadow 1s;
+
+    &:hover {
+      outline: none;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.38);
+    }
+
+    &:active {
+      -webkit-transition: box-shadow 0.1s;
+      transition: box-shadow 0.1s;
+      outline: none;
+      box-shadow: 0 0px 0px rgba(0, 0, 0, 0.38);
+    }
+  }
+
+  &_centered {
+    margin: 0 auto;
+  }
+
+  &_main-header {
+    margin-top: 44px;
+  }
+}

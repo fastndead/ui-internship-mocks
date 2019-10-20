@@ -1,0 +1,35 @@
+.navbar {
+  background-color: #000000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 72px;
+  box-sizing: border-box;
+
+  &__content {
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include logo-embedment(36px);
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+  }
+
+  &__link {
+    @include navbar-font;
+
+    &:hover {
+      border-bottom: 2px solid currentColor;
+      line-height: 1;
+    }
+  }
+  @include for-ipads-landscape {
+    padding: 0 35px;
+  }
+}
