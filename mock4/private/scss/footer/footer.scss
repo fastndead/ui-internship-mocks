@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+
+  &__content {
+    display: flex;
+    height: 100px;
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+    color: $text-color-secondary;
+    @include paragraph-font;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 330px;
+  }
+
+  &__icon {
+    color: $text-color-secondary;
+    &:hover {
+      color: $brand-color;
+    }
+  }
+
+  &__caption {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding-top: 15px;
+  }
+
+
+}

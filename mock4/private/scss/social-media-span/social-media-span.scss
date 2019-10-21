@@ -1,0 +1,40 @@
+.social-media-span {
+  display: flex;
+  width: 100%;
+
+  &__text {
+    width: 400px;
+  }
+
+  &__heading {
+    @include heading-font;
+  }
+
+  &__paragraph {
+    @include paragraph-font;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+  }
+
+  &__icon {
+    color: #cccccc;
+    &:hover {
+      color: $brand-color;
+    }
+  }
+
+  @include for-ipads-landscape {
+    padding: 0 35px;
+  }
+
+  @include for-ipads-portrait {
+    &__text {
+      width: 200px;
+    }
+  }
+}

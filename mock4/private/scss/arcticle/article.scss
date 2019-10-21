@@ -1,0 +1,91 @@
+.article {
+  &__header {
+    @include heading-font;
+
+    &_no-margin-bottom {
+      margin-bottom: 0;
+    }
+
+    &_small {
+      font-size: 14px;
+    }
+
+    &_underlined-centered {
+      justify-self: center;
+      text-align: center;
+
+      &:after {
+        margin: 0 auto;
+        content: "";
+        display: flex;
+        border-bottom: 2px #F08934 solid;
+        width: 72px;
+        margin-top: 30px;
+      }
+    }
+
+    &_underlined {
+      &:after {
+        content: "";
+        display: flex;
+        border-bottom: 2px $brand-color solid;
+        width: 72px;
+        margin-top: 30px;
+      }
+    }
+
+    &_large {
+      margin-top: 0;
+      margin-bottom: 0;
+      @include main-heading-font;
+      color: $text-color-primary;
+    }
+
+    &_dark-background {
+      color: $text-color-dark-background;
+      &:after {
+        border-color: $text-color-dark-background;
+      }
+    }
+  }
+
+  &_centered {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__paragraph {
+    @include paragraph-font;
+
+    &_no-margin {
+      margin: 0;
+    }
+
+    &_margin-top {
+      margin-top: 30px;
+    }
+  }
+
+  &_narrow {
+    width: 473px;
+
+    @include for-ipads-portrait {
+      width: 400px;
+    }
+  }
+
+  &_extra-narrow {
+    width: 350px;
+
+    @include for-ipads-landscape {
+      width: 270px;
+    }
+
+    @include for-ipads-portrait {
+      width: 350px;
+      margin-bottom: 30px;
+    }
+  }
+}

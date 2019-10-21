@@ -1,0 +1,30 @@
+.tab-content-box {
+  display: flex;
+  flex-direction: column;
+  height: 342px;
+  align-items: center;
+  justify-content: center;
+  max-width: 954px;
+
+  @include for-ipads-landscape {
+    max-width: 840px;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0;}
+    99% { opacity: 99.9;}
+    100% { opacity: 1;}
+  }
+}
+
+.tab-content-box > div {
+  display: none;
+  float: right;
+}
+
+#tab1:checked ~ .tab-content-box #content1,
+#tab2:checked ~ .tab-content-box #content2,
+#tab3:checked ~ .tab-content-box #content3 {
+  animation: fadeIn 1s;
+  display: flex;
+}

@@ -1,0 +1,31 @@
+.tab-content2 {
+  height: 100%;
+  align-items: center;
+
+  &__left {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  @include for-ipads-portrait {
+    &__left {
+      padding: 30px;
+    }
+    width: 584px;
+
+    &__image {
+      width: 250px;
+    }
+  }
+
+  &__heading {
+    @include heading-font;
+  }
+
+  &__paragraph {
+    @include paragraph-font;
+  }
+}

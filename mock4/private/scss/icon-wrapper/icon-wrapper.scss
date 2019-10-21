@@ -1,0 +1,33 @@
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+
+  &_margin-top {
+    margin-top: 10px;
+  }
+
+  &_margin-right {
+    margin-right: 30px;
+  }
+
+  &_small {
+    width: 40px;
+    height: 40px;
+  }
+
+  &_circle {
+    border: 2px black solid;
+    border-radius: 50%;
+
+
+  }
+
+  &_brand-color {
+    border-color: $brand-color;
+  }
+}

@@ -1,0 +1,50 @@
+.picture-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  &__picture {
+    &_round {
+      border-radius: 50%;
+    }
+
+    &_left {
+      left: -40px;
+      position: absolute;
+    }
+
+    &_right {
+      right: -40px;
+      position: absolute;
+    }
+
+    &_avatar {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  @include for-ipads-landscape {
+    &__picture {
+      &_right {
+        right: -20px;
+        position: absolute;
+      }
+    }
+  }
+
+  @include for-ipads-portrait {
+    &__picture {
+      width: 250px;
+
+      &_right {
+        right: 0;
+      }
+
+      &_left {
+        left: 0;
+      }
+    }
+
+  }
+}

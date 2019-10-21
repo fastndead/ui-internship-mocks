@@ -1,0 +1,29 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &_box-shadow {
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.38);
+  }
+
+  &_midpage-background {
+    background-color: black;
+    background-image: url("/images/midpage-background.png");
+    background-size: cover;
+  }
+
+  &_color-secondary {
+    background-color: $background-color-secondary;
+  }
+
+  &_main-header {
+    flex-grow: 1;
+    background-color: black;
+    background-size: cover;
+    background-image: url("/images/heading-background.png");
+  }
+}
+
+

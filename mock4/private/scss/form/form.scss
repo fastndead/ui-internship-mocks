@@ -1,0 +1,90 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+
+  &_main-header {
+    max-width: 360px;
+  }
+
+  &__header {
+    background-color: $background-color-secondary;
+    padding: 18px 55px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  &__heading {
+    @include heading-font;
+    margin: 0;
+    white-space: nowrap;;
+
+    &_emphasised {
+      color: $brand-color;
+      text-transform: uppercase;
+    }
+  }
+
+  &__text-input {
+    outline: none;
+    border: 0;
+    border-bottom: 2px $background-color-secondary solid;
+
+    @include paragraph-font;
+    padding: 9px 15px;
+    margin-top: 30px;
+
+    height:17px;
+    margin-left:1px;
+    -webkit-box-shadow: 0 1px 0px 0px $background-color-secondary;
+    -moz-box-shadow: 0 1px 0px 0px $background-color-secondary;
+    box-shadow: 0 1px 0px 0px $background-color-secondary;
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+
+    &_field {
+      height: 100%;
+      resize: none;
+    }
+
+    &::placeholder {
+      @include placeholder-font;
+    }
+
+    &:focus {
+      -webkit-box-shadow: 0 2px 0px 0px $brand-color;
+      -moz-box-shadow: 0 2px 0px 0px $brand-color;
+      box-shadow: 0 2px 0px 0px $brand-color;
+    }
+  }
+
+  &__input-wrapper {
+    display: flex;
+    outline: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+
+    &_wide {
+      width: 100%;
+    }
+
+    &_margin-right {
+      margin-right: 50px;
+    }
+
+    &_no-left-right-padding {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+  }
+}
