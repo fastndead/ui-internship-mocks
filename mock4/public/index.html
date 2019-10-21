@@ -479,13 +479,13 @@
         <form class="form" method="post" action="/">
             <div class="form__inputs">
                 <div class="form__input-wrapper form__input-wrapper_margin-right  form__input-wrapper_no-left-right-padding form__input-wrapper_wide">
-                    <input type="text" class="form__text-input" placeholder="Name" required pattern="[A-Za-z]{1,}">
-                    <input type="email" class="form__text-input" placeholder="Email" required
+                    <input title="at least 1 character, only latin letters" type="text" class="form__text-input" placeholder="Name" required pattern="[A-Za-z]{1,}">
+                    <input title="enter valid email" type="email" class="form__text-input" placeholder="Email" required
                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
                     <input type="text" class="form__text-input" placeholder="Subject" required>
                 </div>
                 <div class="form__input-wrapper form__input-wrapper_no-left-right-padding form__input-wrapper_wide">
-                    <textarea id="text-area" type="text" class="form__text-input form__text-input_field"
+                    <textarea id="text-area" class="form__text-input form__text-input_field"
                               placeholder="Message"
                               required="" minlength="1" maxlength="250"></textarea>
                 </div>
