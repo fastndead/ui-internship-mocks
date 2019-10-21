@@ -2,6 +2,10 @@
   flex-grow: 1;
   align-items: center;
 
+  &_margin-top {
+    margin-top: 10px;
+  }
+
   &_brand-color {
     color: $brand-color;
   }

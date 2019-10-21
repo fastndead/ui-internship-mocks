@@ -8,12 +8,15 @@
     width: 300px;
   }
 
+  @include for-ipads-portrait {
+    width: 200px;
+  }
+
   &__dollar {
     font-size: 35px;
   }
 
   &__rect {
-
     padding: 15px;
     margin: 1px 0;
 
@@ -25,6 +28,10 @@
       background-color: $text-color-primary;
       @include heading-font;
       color: white;
+    }
+
+    &_no-margin {
+      margin: 0;
     }
 
     &_italic {

@@ -1,16 +1,22 @@
 .client-card {
   display: flex;
-  justify-content: space-evenly;
-  width: 180px;
+  width: 200px;
 
   &__client-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 15px;
   }
 
   &_margin-top {
     margin-top: 30px;
     margin-right: auto;
+  }
+
+  @include for-ipads-portrait {
+
+      margin-bottom: 30px;
+      margin-right: 70px;
   }
 }

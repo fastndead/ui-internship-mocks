@@ -8,6 +8,10 @@
     width: 954px;
   }
 
+  @include for-ipads-portrait {
+    width: auto;
+  }
+
   &__tab {
     display: flex;
     align-items: center;

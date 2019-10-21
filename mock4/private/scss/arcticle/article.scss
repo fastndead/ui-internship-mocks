@@ -35,6 +35,8 @@
     }
 
     &_large {
+      margin-top: 0;
+      margin-bottom: 0;
       @include main-heading-font;
       color: $text-color-primary;
     }
@@ -60,17 +62,30 @@
     &_no-margin {
       margin: 0;
     }
+
+    &_margin-top {
+      margin-top: 30px;
+    }
   }
 
   &_narrow {
-    width: 430px;
+    width: 473px;
+
+    @include for-ipads-portrait {
+      width: 400px;
+    }
   }
 
   &_extra-narrow {
-    width: 360px;
+    width: 350px;
 
     @include for-ipads-landscape {
       width: 270px;
+    }
+
+    @include for-ipads-portrait {
+      width: 350px;
+      margin-bottom: 30px;
     }
   }
 }

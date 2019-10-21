@@ -31,4 +31,10 @@
   @include for-ipads-landscape {
     padding: 0 35px;
   }
+
+  @include for-ipads-portrait {
+    &__text {
+      width: 200px;
+    }
+  }
 }

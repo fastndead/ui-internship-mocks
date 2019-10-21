@@ -19,6 +19,7 @@
   }
 
   &_main-header {
+    flex-grow: 1;
     background-color: black;
     background-size: cover;
     background-image: url("/images/heading-background.png");

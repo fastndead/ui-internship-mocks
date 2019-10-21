@@ -4,8 +4,12 @@
 
   &__item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+
+    &_align-flex-start {
+      align-items: flex-start;
+    }
 
     &_centered {
       flex-direction: column;
@@ -21,5 +25,13 @@
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+  }
+
+  @include for-ipads-portrait {
+    &_direction-row {
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+    }
   }
 }

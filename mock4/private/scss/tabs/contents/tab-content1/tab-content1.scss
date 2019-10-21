@@ -10,6 +10,17 @@
     height: 100%;
   }
 
+  @include for-ipads-portrait {
+    &__left {
+      padding: 30px;
+    }
+    width: 584px;
+
+    &__image {
+      width: 250px;
+    }
+  }
+
   &__heading {
     @include heading-font;
   }

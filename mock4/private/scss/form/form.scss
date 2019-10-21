@@ -28,11 +28,12 @@
   }
 
   &__text-input {
+    outline: none;
     border: 0;
     border-bottom: 2px $background-color-secondary solid;
 
     @include paragraph-font;
-    padding: 20px 15px;
+    padding: 9px 15px;
     margin-top: 30px;
 
     height:17px;
@@ -42,7 +43,6 @@
     box-shadow: 0 1px 0px 0px $background-color-secondary;
     -webkit-transition: box-shadow 0.3s;
     transition: box-shadow 0.3s;
-    outline: none;
 
     &_field {
       height: 100%;
@@ -54,7 +54,6 @@
     }
 
     &:focus {
-      outline: none;
       -webkit-box-shadow: 0 2px 0px 0px $brand-color;
       -moz-box-shadow: 0 2px 0px 0px $brand-color;
       box-shadow: 0 2px 0px 0px $brand-color;
@@ -73,6 +72,15 @@
 
     &_wide {
       width: 100%;
+    }
+
+    &_margin-right {
+      margin-right: 50px;
+    }
+
+    &_no-left-right-padding {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 

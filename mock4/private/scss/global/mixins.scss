@@ -57,6 +57,8 @@
 @mixin logo-embedment($size) {
   &__logo {
     @include logo-first-part-font($size);
+    display: flex;
+    flex-direction: row;
 
     &_second-part {
       @include logo-second-part-font($size);
@@ -66,7 +68,15 @@
 
 @mixin for-ipads-landscape {
   /* iPads (landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1200px) {
+  @media only screen and (max-device-width : 1200px) {
+    @content
+  }
+}
+
+@mixin for-ipads-portrait {
+  @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1023px)  {
     @content
   }
 }

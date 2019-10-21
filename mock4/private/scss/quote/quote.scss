@@ -7,6 +7,10 @@
   height: 150px;
   max-width: 270px;
   position: relative;
+  @include for-ipads-portrait {
+    max-width: 350px;
+    padding: 35px 33px;
+  }
 
   &:before {
     background-color: $background-color-secondary;
@@ -16,6 +20,7 @@
     width: 16px;
     position: absolute;
     bottom: -7.5px;
+    left: 20px;
     transform: rotate(47deg) skew(5deg);
   }
 }
